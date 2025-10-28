@@ -30,7 +30,7 @@
 > links que recomendo urgentemente verificar:
  -> [LEIA OS LIVROS](https://drive.google.com/drive/folders/1kMA_BTfdB7-eSZZglduOw-UftfWh_8lI?hl=pt-br) é essencial que vocês aprendam a ler livros e documentação, apenas IA não vai te dar base.
 
- -> [VISUALG LOGICA Basica](https://drive.google.com/drive/folders/1csLGiELVL4cnwAfTiA3qMcWDtlKbQQSZ?hl=pt-br)
+ -> [VISUALG LOGICA Basica](https://drive.google.com/drive/folders/1csLGiELVL4cnwAfTiA3qMcWDtlKbQQSZ?hl=pt-br) (tenta entender como é o procedimento dos algoritmos)
 
  -> [MIT Logic Programming](https://www.youtube.com/watch?v=rCqMiPk1BJE&pp=ygUYTE9HSUMgT0YgUFJPR1JBTU1JTkcgTUlU), as melhores universidades do mundo liberam aulas para vocês, usem e abusem desses videos
  
@@ -44,3 +44,5 @@
 > O QUE FAZER: reajuste esse projeto e se pergunte o que DEVE melhorar, e me mande para eu te aconselhar. Aprenda a ser **autodidata** vai te ajudar demais nessa jornada. 
 
 > TEORIA é BASE para projetos futuros, aprenda tudo que puder.
+
+> esqueci de dizer, aprende mais do git mestre, vai te ajudar também.
