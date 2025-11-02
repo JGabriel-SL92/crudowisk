@@ -17,7 +17,7 @@ function Pessoa(nome) {
 
 function listarPessoas(){
     // não logar o array todo em produção; aqui é útil para depuração
-    console.log('A lista de pessoas possui:', pessoas.length, 'item(s)')
+    console.log('A lista de pessoas possui:', pessoas.length, 'item()')
     return pessoas
 }
 function buscarPessoa(id){
@@ -102,10 +102,9 @@ function startEdit(id) {
     const p = buscarPessoa(id)
     if (!p) return
     const nomeInput = document.getElementById('nomeItem')
-    const idadeInput = document.getElementById('idadeItem')
-    if (!nomeInput || !idadeInput) return
+   
+    if (!nomeInput) return
     nomeInput.value = p.nome
-    idadeInput.value = p.idade || ''
     editingId = id
     const saveBtn = document.getElementById('saveBtn')
     if (saveBtn) saveBtn.textContent = 'Atualizar'
@@ -113,11 +112,8 @@ function startEdit(id) {
 
 function handleSave() {
     const nomeInput = document.getElementById('nomeItem')
-    const idadeInput = document.getElementById('idadeItem')
     if (!nomeInput) return
     const nome = nomeInput.value.trim()
-    const idadeStr = (idadeInput && idadeInput.value) ? idadeInput.value.trim() : ''
-    const idade = idadeStr === '' ? undefined : (isNaN(Number(idadeStr)) ? idadeStr : Number(idadeStr))
     if (!nome) { alert('Por favor digite um nome'); return }
 
     if (editingId) {
@@ -127,12 +123,11 @@ function handleSave() {
         const saveBtn = document.getElementById('saveBtn')
         if (saveBtn) saveBtn.textContent = 'Salvar'
     } else {
-        Pessoa(nome, idade)
+        Pessoa(nome)
     }
 
     // limpar campos e rerender
     nomeInput.value = ''
-    if (idadeInput) idadeInput.value = ''
     renderPessoas()
 }
 
